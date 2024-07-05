@@ -3,18 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workspace</title>
+    <title>My Space</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #98fcdc;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow-y: hidden;
+      }
+      h2 {
+        color: #000000;
+        margin-top: 0px;
+        text-shadow: 2px 2px 0px #acacac;
+        font-family: cursive;
+      }
+      p {
+        color: #31004a;
+        margin-bottom: 20px;
+        margin-top: -10px;
+        text-shadow: 0.5px 0.5px 0px #ff0080;
+      }
+      img {
+        border: 3px solid #005c48;
+        border-radius: 35px;
+        transition: transform 0.3s ease;
+      }
+      img:hover {
+        transform: scale(1.05);
+        box-shadow: 5px 5px 20px #004d43;
+      }
+      map area {
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <h1>My Workspace</h1>
+    <h2>My Workspace</h2>
     <p>
-      Click 👆 on any highlighted area within the image below to be redirected
-      to a new page
+      Click on any highlighted area within the image below to be redirected to a
+      new page
     </p>
-
-    <img src="workspace.jpeg" alt="Workplace" usemap="#workmap" />
-
-    <map name="#workmap">
+    <div style="position: relative">
+      <img src="workspace.jpeg" alt="Workplace" usemap="#workmap" />
+    </div>
+    <map name="workmap">
       <area
         target="_blank"
         alt="Screen"
